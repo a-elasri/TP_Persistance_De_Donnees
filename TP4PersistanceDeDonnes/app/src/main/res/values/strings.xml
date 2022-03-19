@@ -2,8 +2,8 @@
     <string name="app_name">TP4PersistanceDeDonnées</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">liste des étudiants</string>
-    <string name="second_fragment_label">Nouveau étudiant</string>
+    <string name="first_fragment_label">Liste des étudiants</string>
+    <string name="second_fragment_label">Nouvel étudiant</string>
     <string name="next">Next</string>
     <string name="previous">Annuler</string>
 
@@ -12,9 +12,9 @@
 
     <string name="cneEtudiant">CNE: </string>
     <string name="nomEtudiant">Nom: </string>
-    <string name="preEtudiant">Nom: </string>
+    <string name="preEtudiant">Prenom: </string>
     <string name="sexeEtudiant">Sexe: </string>
     <string name="dateNEtu">Date de naissance: </string>
-    <string name="ajouter">Ajouter un etudiant:</string>
+    <string name="ajouter">Ajouter un étudiant:</string>
 
 </resources>

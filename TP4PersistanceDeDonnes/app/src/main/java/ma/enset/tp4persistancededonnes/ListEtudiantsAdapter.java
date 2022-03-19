@@ -55,7 +55,6 @@ public class ListEtudiantsAdapter extends ArrayAdapter<Etudiant> {
         contextFrag=context;
     }
 
-
     @RequiresApi(api = Build.VERSION_CODES.Q)
     @NonNull
     @Override

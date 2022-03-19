@@ -1,36 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SecondFragment">
-
+    tools:context=".SecondFragment"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp" >
 
     <TextView
         android:id="@+id/ajouter"
-        android:layout_width="168dp"
-        android:layout_height="43dp"
-        android:layout_margin="15dp"
+        android:layout_width="315dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
         android:text="@string/ajouter"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="26dp"
+        android:textColor="@color/black"
+        android:textSize="30dp"
         android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_width="375dp"
-        android:layout_height="367dp"
-        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="289dp"
+        android:orientation="vertical"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-2dp"
         tools:layout_editor_absoluteY="88dp">
 
         <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
+            android:layout_width="600dp"
+            android:layout_height="500dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="8dp"
             android:layout_weight="1">
 
@@ -46,17 +50,19 @@
                     android:maxLines="2"
                     android:singleLine="false"
                     android:text="@string/cneEtudiant"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
+                    android:textColor="@color/bleu"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/cneEtudiant"
-                    android:layout_width="285dp"
-                    android:layout_height="wrap_content" />
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/edit_text_style" />
             </TableRow>
 
             <TableRow
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
 
@@ -69,17 +75,19 @@
                     android:maxLines="3"
                     android:singleLine="false"
                     android:text="@string/nomEtudiant"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
+                    android:textColor="@color/bleu"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/NomEtudiant"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/edit_text_style" />
             </TableRow>
 
             <TableRow
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
@@ -88,17 +96,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/preEtudiant"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
+                    android:textColor="@color/bleu"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/PreEtudiant"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/edit_text_style" />
+
             </TableRow>
 
             <TableRow
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
@@ -108,17 +119,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/sexeEtudiant"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
+                    android:textColor="@color/bleu"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
 
-                z<EditText
+
+                <EditText
                     android:id="@+id/SexeEtudiant"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_width="180dp"
+                    android:hint="   F | M"
+                    android:layout_height="30dp"
+                    android:background="@drawable/edit_text_style" />
+
             </TableRow>
 
             <TableRow
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
@@ -127,38 +143,46 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/dateNEtu"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
+                    android:textColor="@color/bleu"
+                    android:textSize="15dp"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/DateNEtu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_width="180dp"
+                    android:hint="  dd/mm/yyyy"
+                    android:layout_height="30dp"
+                    android:background="@drawable/edit_text_style" />
+
             </TableRow>
 
         </TableLayout>
+<TableRow
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="498dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/button_enregistrer"
             android:layout_width="77dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
+            android:layout_marginStart="200dp"
             app:srcCompat="@android:drawable/ic_menu_save"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="274dp"
             tools:layout_editor_absoluteY="499dp" />
 
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/button_second"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            app:srcCompat="@android:drawable/ic_menu_revert"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="77dp"
-            tools:layout_editor_absoluteY="498dp" />
+</TableRow>
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
